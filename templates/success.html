@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Success</title>
+    <!-- Add links to MDB CSS and JS files -->
+    <link href="https://cdn.jsdelivr.net/npm/mdb-ui-kit/css/mdb.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/mdb-ui-kit/js/mdb.min.js"></script>
+
+    <!-- Custom styles -->
+    <style>
+        body {
+            background-color: #f8f9fa;
+            background-image: url('your-background-image.jpg'); /* Replace with your background image URL */
+            background-size: cover;
+            background-position: center;
+            color: #fff;
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            height: 100vh; /* Full viewport height */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .container {
+            max-width: 600px;
+        }
+
+        .alert {
+            background-color: #28a745;
+            border-color: #218838;
+            color: #fff;
+            position: relative;
+        }
+
+        h4 {
+            font-size: 24px;
+            margin-bottom: 15px;
+        }
+
+        p {
+            font-size: 18px;
+            margin-bottom: 30px;
+        }
+
+        .checkmark {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 50px;
+            height: 50px;
+            background-color: #fff;
+            clip-path: polygon(0 25%, 50% 100%, 100% 0);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #28a745;
+            font-size: 30px;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Your registration success content -->
+<div class="container">
+    <div class="alert text-center" role="alert">
+        <h4 class="alert-heading">Registration Successful!</h4>
+        <p>Your account has been created successfully.</p>
+        <div class="checkmark">&#10004;</div>
+    </div>
+</div>
+
+<!-- Add a script to redirect after 2 seconds -->
+<script>
+    setTimeout(function() {
+        window.location.href = '/login'; // Change this to the login page URL
+    }, 2000); // 2000 milliseconds = 2 seconds
+</script>
+
+</body>
+</html>

@@ -1,0 +1,79 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}
+    Lahore Fort
+{% endblock title %}
+
+{% block main_content %}
+  
+
+    <!-- Blog Section -->
+    <div class="blog_main" style="margin-top: 60px;">
+        <div class="container">
+            <!-- Example Blog Content -->
+            <h2 class="text-center mb-4">Welcome to Our Blog!</h2>
+            <p class="text-center mb-4">Mohenjo-daro is an archaeological site in Larkana District, Sindh, Pakistan.</p>
+
+            <!-- Example Blog Posts -->
+            <div class="row">
+                <div class="col-sm-6 col-md-4 mb-4">
+                    <div class="section_1">
+                        <div class="img-container" style="height: 300px;">
+                            <img src="../static/img/Mohnjo1.jpg" alt="Blog Image" class="img-fluid rounded h-100 w-100">
+                        </div>
+                        <button type="button" class="date-bt mt-2">26 JULY 2014</button>
+                        <p class="mt-3">
+                            Lahore Fort, located in Lahore, Pakistan,
+                             is a UNESCO World Heritage Site known for its rich Mughal architecture. Built in the 16th century by Emperor Akbar, the fort houses beautiful palaces, gardens, and mosques. Its iconic Alamgiri Gate is a symbol of grandeur. The fort played a significant role in the region's history and stands as a testament to Mughal craftsmanship and design.
+                        </p>
+                    </div>
+                </div>
+                <!-- Add more blog posts as needed -->
+                <div class="col-sm-6 col-md-4 mb-4">
+                    <div class="section_1">
+                        <div class="img-container" style="height: 300px;">
+                            <img src="../static/img/Mohnjo2.jpg" alt="Blog Image" class="img-fluid rounded h-100 w-100">
+                        </div>
+                        <button type="button" class="date-bt mt-2">26 JULY 2024</button>
+                        <p class="mt-3">
+                            The Lahore Fort encompasses a vast complex with notable structures like the Sheesh Mahal, a palaThe fort's Diwan-i-Khas and Diwan-i-Aam served as imperial courts, showcasing the Mughal emperor's authority. The Naulakha Pavilion, a white marble pavilion, offers panoramic views of the surrounding landscape. With its fusion of Persian, Turkish, and indigenous architectural styles,
+                        </p>
+                    </div>
+                </div>
+                 <div class="col-sm-6 col-md-4 mb-4">
+                    <div class="section_1">
+                        <div class="img-container" style="height: 300px;">
+                            <img src="../static/img/Mohnjo3.jpg" alt="Blog Image" class="img-fluid rounded h-100 w-100">
+                        </div>
+                        <button type="button" class="date-bt mt-2">26 JULY 2024</button>
+                        <p class="mt-3">
+                            The fort's Shish Mahal, or Palace of Mirrors, boasts dazzling mirror mosaics, reflecting artistic brilliance. The historic fort underwent restoration efforts to preserve its heritage, showcasing a harmonious blend of Mughal and Sikh influences. Visitors to Lahore Fort can explore its captivating history while enjoying the stunning architectural marvels that unfold within its walls.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact Section -->
+    <div class="contact_main">
+        <div class="container">
+            <!-- Include your contact content here -->
+        </div>
+    </div>
+
+    <!-- Copyright Section -->
+    <div class="copyright">
+        <div class="container">
+            <!-- Include your copyright content here -->
+        </div>
+    </div>
+
+    <!-- JavaScript files -->
+    <script src="{% static 'js/jquery.min.js' %}"></script>
+    <script src="{% static 'js/popper.min.js' %}"></script>
+    <script src="{% static 'js/bootstrap.bundle.min.js' %}"></script>
+
+    <!-- Additional scripts as needed -->
+{% endblock main_content %}

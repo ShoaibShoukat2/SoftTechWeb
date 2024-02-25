@@ -1,0 +1,53 @@
+{% extends 'base.html' %}
+
+{% block main_content %}
+{% if error_messages %}
+    <script>
+        // Display error message using SweetAlert2
+        document.addEventListener('DOMContentLoaded', function () {
+            Swal.fire({
+                icon: 'error',
+                title: 'Oops...',
+                text: "{{ error_messages|safe }}",
+            });
+        });
+    </script>
+{% endif %}
+
+<!-- Login Form Start -->
+<div class="container mt-5 mb-5">
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-header bg-primary text-white">
+                    <h4 class="card-title">Login</h4>
+                </div>
+                <div class="card-body text-center">
+                    <form method="post" action="/login/">
+                        {% csrf_token %}
+                        <div class="mb-3">
+                            <label for="username" class="form-label">Username</label>
+                            <input type="text" class="form-control" id="username" name="username" required>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="password" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="password" name="password" required>
+                        </div>
+
+                        <!-- Add more form fields as needed -->
+
+                        <div class="mb-3">
+                            <button type="submit" class="btn btn-primary">Login</button>
+                            <a href="#" class="btn btn-secondary ms-2">Cancel</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Login Form End -->
+
+</script>
+{% endblock main_content %}
